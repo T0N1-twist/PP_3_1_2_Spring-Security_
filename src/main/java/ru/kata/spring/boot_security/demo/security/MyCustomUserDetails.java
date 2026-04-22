@@ -6,12 +6,16 @@ import ru.kata.spring.boot_security.demo.model.User;
 
 import java.util.Collection;
 
-public class SecurityUser implements UserDetails {
+public class MyCustomUserDetails implements UserDetails {
 
     private final User user;
 
-    public SecurityUser(User user) {
+    public MyCustomUserDetails(User user) {
         this.user = user;
+    }
+
+    public User getUser() {
+        return user;
     }
 
     @Override

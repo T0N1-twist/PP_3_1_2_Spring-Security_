@@ -19,7 +19,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     Optional<User> findWithRolesByUsername(String username);
 
     @EntityGraph(attributePaths = {"roles"})
-    List<User> findAll();
+    public List<User> findAll();
 
 
 }
