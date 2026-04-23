@@ -5,6 +5,7 @@ import ru.kata.spring.boot_security.demo.model.User;
 import ru.kata.spring.boot_security.demo.repository.UserRepository;
 
 import java.util.List;
+
 @Service
 public class UserServiceImpl implements UserService {
 
